@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "校园发布",
+  "navigationBarBackgroundColor": "#3c7f54",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "tui-tabs": "../../node-modules/thorui-uni/lib/thorui/tui-tabs/tui-tabs"
+  }
+}

@@ -1,0 +1,261 @@
+{
+    "pages": [{
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "广城书丛",
+                "enablePullDownRefresh": true,
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/school/school",
+            "style": {
+                "navigationBarTitleText": "校园发布",
+                "navigationBarBackgroundColor": "#3c7f54",
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "pages/jia/jia",
+            "style": {
+                "navigationBarTitleText": "我要发布",
+                "navigationBarBackgroundColor": "#3c7f54",
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "pages/fenlei/fenlei",
+            "style": {
+                "navigationBarTitleText": "书籍分类",
+                "enablePullDownRefresh": true,
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/mine/mine",
+            "style": {
+                "navigationBarTitleText": "广城书丛",
+                "navigationBarBackgroundColor": "#3c7f54",
+                "navigationStyle": "custom"
+
+            }
+        },
+        {
+            "path": "pages/search/search",
+            "style": {
+                "navigationBarTitleText": "搜索",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/zhuanye/zhuanye",
+            "style": {
+                "navigationBarTitleText": "信息工程学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/login/login",
+            "navigationBarTitleText": "登录",
+            "navigationBarBackgroundColor": "#3c7f54"
+
+        },
+        {
+            "path": "pages/huore/huore",
+            "style": {
+                "navigationBarTitleText": "火热书籍排行",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/newpublish/newpublish",
+            "style": {
+                "navigationBarTitleText": "最新发布",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/lowestprice/lowestprice",
+            "style": {
+                "navigationBarTitleText": "最低价格",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/coupon(youhui)/coupon(youhui)",
+            "style": {
+                "navigationBarTitleText": "优惠券",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/schoolmap/schoolmap",
+            "style": {
+                "navigationBarTitleText": "校园地图",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/zhinengzhizhao/zhinengzhizhao",
+            "style": {
+                "navigationBarTitleText": "智能制造学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/teshujiaoyu/teshujiaoyu",
+            "style": {
+                "navigationBarTitleText": "特殊教育学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/lvyou/lvyou",
+            "style": {
+                "navigationBarTitleText": "旅游学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/shuzishangmao/shuzishangmao",
+            "style": {
+                "navigationBarTitleText": "数字商贸学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/shiping/shiping",
+            "style": {
+                "navigationBarTitleText": "食品健康学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/yishuyuxinmeiti/yishuyuxinmeiti",
+            "style": {
+                "navigationBarTitleText": "艺术与新媒体学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/gonggongguanli/gonggongguanli",
+            "style": {
+                "navigationBarTitleText": "公共管理学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/zhihuichengjian/zhihuichengjian",
+            "style": {
+                "navigationBarTitleText": "智慧城建学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/guangshangyue/guangshangyue",
+            "style": {
+                "navigationBarTitleText": "关山月中国画学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/wangluoxinwenyuchuanbo/wangluoxinwenyuchuanbo",
+            "style": {
+                "navigationBarTitleText": "网络新闻与传播学院",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/wodedingdan/wodedingdan",
+            "style": {
+                "navigationBarTitleText": "我的订单",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/wodeshoucan/wodeshoucan",
+            "style": {
+                "navigationBarTitleText": "我的收藏",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/lishifabu/lishifabu",
+            "style": {
+                "navigationBarTitleText": "历史发布",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/dizhiguanli/dizhiguanli",
+            "style": {
+                "navigationBarTitleText": "地址管理",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+        {
+            "path": "pages/qita/qita",
+            "style": {
+                "navigationBarTitleText": "其他",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        },
+
+        {
+            "path": "pages/yonghuxvzhi/yonghuxvzhi",
+            "style": {
+                "navigationBarTitleText": "用户须知",
+                "navigationBarBackgroundColor": "#3c7f54"
+            }
+        }
+    ],
+
+    "globalStyle": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "广城书丛",
+        "navigationBarBackgroundColor": "#328d64",
+        "backgroundColor": "#f3f3f3",
+        "titlePenetrate": "YES"
+    },
+    "tabBar": {
+        "color": "#fff",
+        "selectedColor": "#fff",
+        "borderStyle": "white",
+        "backgroundColor": "#255d40",
+        "iconWidth": "50rpx",
+        "fontSize": "25rpx",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "iconPath": "./static/home.png",
+                "selectedIconPath": "./static/home__.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/school/school",
+                "iconPath": "./static/job.png",
+                "selectedIconPath": "./static/job_.png",
+                "text": "校园发布"
+            },
+            {
+                "pagePath": "pages/jia/jia",
+                "iconPath": "./static/icon_添加.png",
+                "selectedIconPath": "./static/加.png",
+                "text": "我要发布"
+            },
+            {
+                "pagePath": "pages/fenlei/fenlei",
+                "iconPath": "./static/分类---.png",
+                "selectedIconPath": "./static/分类——————.png",
+                "text": "书籍分类"
+            },
+
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "./static/mine.png",
+                "selectedIconPath": "./static/mine_.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "uniIdRouter": {}
+}

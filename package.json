@@ -1,0 +1,19 @@
+{
+  "name": "gcp-life-help",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.5.6",
+    "@escook/request-miniprogram": "^0.2.1",
+    "thorui-uni": "^3.0.0",
+    "vue-router": "^4.4.5",
+    "vuex": "^4.1.0"
+  }
+}

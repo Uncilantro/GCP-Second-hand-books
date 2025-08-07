@@ -1,0 +1,1 @@
+<view class="titlemap">广城校外导航</view><view class="mapxiaowai"><map id="map" class="map" show-location="{{true}}" latitude="{{a}}" longitude="{{b}}"></map></view><view class="titlemap">广城校内地图</view><image class="map" src="https://img.picui.cn/free/2024/10/23/6717e9f44e757.jpg" mode=""></image>

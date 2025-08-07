@@ -1,0 +1,103 @@
+
+.address-manage.data-v-c85f7a2d {
+        padding: 20rpx;
+}
+.address-list.data-v-c85f7a2d {
+        margin-bottom: 20rpx;
+}
+.address-item.data-v-c85f7a2d {
+        background-color: #fff;
+        border-radius: 10rpx;
+        padding: 20rpx;
+        margin-bottom: 20rpx;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.address-info.data-v-c85f7a2d {
+        flex: 1;
+}
+.name.data-v-c85f7a2d,
+    .phone.data-v-c85f7a2d,
+    .detail.data-v-c85f7a2d {
+        display: block;
+        margin-bottom: 10rpx;
+}
+.name.data-v-c85f7a2d {
+        font-size: 32rpx;
+        font-weight: bold;
+}
+.phone.data-v-c85f7a2d {
+        font-size: 28rpx;
+        color: #555;
+}
+.detail.data-v-c85f7a2d {
+        font-size: 24rpx;
+        color: #777;
+}
+.address-actions.data-v-c85f7a2d {
+        display: flex;
+        flex-direction: column;
+}
+.edit-btn.data-v-c85f7a2d,
+    .delete-btn.data-v-c85f7a2d {
+        background-color: #6aaf90;
+        color: #fff;
+        border: none;
+        padding: 10rpx 20rpx;
+        border-radius: 5rpx;
+        margin-bottom: 10rpx;
+        font-size: 24rpx;
+}
+.add-address-btn.data-v-c85f7a2d {
+        background-color: #6aaf90;
+        color: #fff;
+        border: none;
+        padding: 20rpx 0;
+        width: 100%;
+        border-radius: 10rpx;
+        font-size: 32rpx;
+}
+
+    /* 弹出层样式 */
+.popup-content.data-v-c85f7a2d {
+        background-color: #fff;
+        border-radius: 10rpx;
+        padding: 20rpx;
+        width: 600rpx;
+}
+.popup-title.data-v-c85f7a2d {
+        font-size: 36rpx;
+        font-weight: bold;
+        margin-bottom: 20rpx;
+}
+.form-item.data-v-c85f7a2d {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20rpx;
+}
+.form-item text.data-v-c85f7a2d {
+        width: 150rpx;
+        font-size: 28rpx;
+}
+.form-item input.data-v-c85f7a2d {
+        flex: 1;
+        padding: 10rpx;
+        border: 1rpx solid #ccc;
+        border-radius: 5rpx;
+        font-size: 28rpx;
+}
+.popup-buttons.data-v-c85f7a2d {
+        display: flex;
+        justify-content: flex-end;
+}
+.cancel-btn.data-v-c85f7a2d,
+    .save-btn.data-v-c85f7a2d {
+        background-color: #6aaf90;
+        color: #fff;
+        border: none;
+        padding: 10rpx 20rpx;
+        border-radius: 5rpx;
+        margin-left: 10rpx;
+        font-size: 28rpx;
+}

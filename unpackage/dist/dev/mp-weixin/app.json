@@ -1,0 +1,84 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/school/school",
+    "pages/jia/jia",
+    "pages/fenlei/fenlei",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/zhuanye/zhuanye",
+    "pages/login/login",
+    "pages/huore/huore",
+    "pages/newpublish/newpublish",
+    "pages/lowestprice/lowestprice",
+    "pages/coupon(youhui)/coupon(youhui)",
+    "pages/schoolmap/schoolmap",
+    "pages/zhinengzhizhao/zhinengzhizhao",
+    "pages/teshujiaoyu/teshujiaoyu",
+    "pages/lvyou/lvyou",
+    "pages/shuzishangmao/shuzishangmao",
+    "pages/shiping/shiping",
+    "pages/yishuyuxinmeiti/yishuyuxinmeiti",
+    "pages/gonggongguanli/gonggongguanli",
+    "pages/zhihuichengjian/zhihuichengjian",
+    "pages/guangshangyue/guangshangyue",
+    "pages/wangluoxinwenyuchuanbo/wangluoxinwenyuchuanbo",
+    "pages/wodedingdan/wodedingdan",
+    "pages/wodeshoucan/wodeshoucan",
+    "pages/lishifabu/lishifabu",
+    "pages/dizhiguanli/dizhiguanli",
+    "pages/qita/qita",
+    "pages/yonghuxvzhi/yonghuxvzhi"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "广城书丛",
+    "navigationBarBackgroundColor": "#328d64",
+    "backgroundColor": "#f3f3f3",
+    "titlePenetrate": "YES"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "backgroundColor": "#255d40",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/home.png",
+        "selectedIconPath": "./static/home__.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/school/school",
+        "iconPath": "./static/job.png",
+        "selectedIconPath": "./static/job_.png",
+        "text": "校园发布"
+      },
+      {
+        "pagePath": "pages/jia/jia",
+        "iconPath": "./static/icon_添加.png",
+        "selectedIconPath": "./static/加.png",
+        "text": "我要发布"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "iconPath": "./static/分类---.png",
+        "selectedIconPath": "./static/分类——————.png",
+        "text": "书籍分类"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "./static/mine.png",
+        "selectedIconPath": "./static/mine_.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取学校位置"
+    }
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,1024 @@
+import store from './store'; // 引入 Vuex 存储
+const data = [{
+        "names": "数字商贸学院",
+        "foods": [{
+                id: '信息技术基础',
+                type: '商英',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '市营',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '大学美育',
+                type: '大会计',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '商英',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '国贸',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '大财管',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '现代物流',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '市营',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '保险营销理论与实务(第2版) ',
+                type: '金管',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/43004/39/23170/64460/66a930b6F8c3c534e/6216c8eb172af0b7.png.avif',
+                jiage: 12,
+                isbn: 9787512150515
+            },
+        ]
+    },
+    {
+        "names": "智慧城建学院",
+        "foods": [{
+                id: '信息技术基础',
+                type: '园林',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '大学生生涯发展与就业力提升',
+                type: '房产',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/190792/19/47589/26307/66ed9b30F045063b6/838c47c711b992f2.jpg.avif',
+                jiage: 9,
+                isbn: 9787536170254
+            },
+            {
+                id: '大学生生涯发展与就业力提升',
+                type: '建工',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/190792/19/47589/26307/66ed9b30F045063b6/838c47c711b992f2.jpg.avif',
+                jiage: 9,
+                isbn: 9787536170254
+            },
+            {
+                id: '大学生生涯发展与就业力提升',
+                type: '古建筑',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/190792/19/47589/26307/66ed9b30F045063b6/838c47c711b992f2.jpg.avif',
+                jiage: 9,
+                isbn: 9787536170254
+            },
+        ]
+    },
+    {
+        "names": "信息工程学院",
+        "foods": [{
+                id: 'HTML5+CSS3网站设计基础教程（第2版）',
+                type: '软件技术',
+                img: 'https://img14.360buyimg.com/n1/s450x450_jfs/t1/174416/40/5781/65222/607ff5b5Eb973d601/be238baf7afb00cd.jpg.avif',
+                jiage: 9,
+                isbn: 9787115526588
+            },
+            {
+                id: 'Java基础入门（第3版）',
+                type: '软件技术',
+                img: 'https://img11.360buyimg.com/n1/s450x450_jfs/t1/197424/28/40452/48548/66478ac3Fa3c70521/20c95cd8d0caa9e0.jpg.avif',
+                jiage: 4,
+                isbn: 9787302592440
+            },
+            {
+                id: '计算机网络技术基础（第3版）',
+                type: '软件技术',
+                img: 'https://img10.360buyimg.com/n1/s450x450_jfs/t1/191511/39/45233/19406/66608ab8F7db60df8/8f9584f536ffc45b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040571158
+            },
+            {
+                id: 'MySQL数据库基础实例教程(第2版)(微课版)',
+                type: '软件技术',
+                img: 'https://img12.360buyimg.com/n1/s450x450_jfs/t1/199554/38/10127/21560/6151a404E0f16367a/3ad375291eb63777.jpg.avif',
+                jiage: 12,
+                isbn: 9787115564634
+            },
+            {
+                id: '软件工程与UML案例解析（第4版）',
+                type: '软件技术',
+                img: 'https://img14.360buyimg.com/n1/s450x450_jfs/t1/148078/31/29533/60796/63107421Ee85d4480/b5cb40f9082f7085.jpg.avif',
+                jiage: 12,
+                isbn: 9787113289195
+            },
+            {
+                id: 'Spring Boot企业级开发教程',
+                type: '软件技术',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/73277/19/28242/44552/66c5fe30F5a4c541b/6639a6a612776901.jpg.avif',
+                jiage: 12,
+                isbn: 9787115512796
+
+            },
+            {
+                id: '计算机专业英语（第六版）',
+                type: '软件技术',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/234956/14/19805/13281/66693a38F4f411768/14c1db03f7abfc39.jpg.avif',
+                jiage: 10,
+                isbn: 9787568535540
+            },
+            {
+                id: '数据结构（C语言版）',
+                type: '软件技术',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/165356/6/11526/114020/6049e4a4E5d5ded90/c3d1bc18ca278b89.jpg.avif',
+                jiage: 7,
+                isbn: 9787040461473
+            },
+            {
+                id: 'PHP基础案例教程（第2版）',
+                type: '软件技术',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/152806/19/23512/81646/629b4e16E8955c122/c2dc9acdc59bc295.jpg.avif',
+                jiage: 12,
+                isbn: 9787115580139
+            },
+            {
+                id: '微信小程序开发实战（第2版）',
+                type: '软件技术',
+                img: 'https://img12.360buyimg.com/n1/s450x450_jfs/t1/190368/25/43866/58185/663de0eaF6d3be361/43e81e7708b50334.jpg.avif',
+                jiage: 8,
+                isbn: 9787115606020
+            },
+            {
+                id: '“互联网+”大学生创新创业教程',
+                type: '人工智能',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/6866/25/39293/29855/66f55b74F370d47eb/6f6b41d0acc3199f.jpg.avif',
+                jiage: 9,
+                isbn: 9787554839942
+            },
+            {
+                id: '图说图解机器学习',
+                type: '人工智能',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/77309/21/6972/107676/5d5240ceE69979ff8/c1123273cf38defd.png.avif',
+                jiage: 7,
+                isbn: 9787121368264
+            },
+            {
+                id: 'C语言程序设计案例式教程（第2版）',
+                type: '人工智能',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/148196/36/46101/19239/66fc9d3aF5d927209/371206842b7a2aeb.jpg.avif',
+                jiage: 8,
+                isbn: 9787115598639
+            },
+            {
+                id: 'Python程序开发案例教程',
+                type: '人工智能',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/213484/5/27190/23480/6422f8b5F8ffb15bc/9438939f0cb0572b.jpg.avif',
+                jiage: 8,
+                isbn: 9787113259723
+            },
+            {
+                id: '传感网应用开发（中级）',
+                type: '物联网',
+                img: 'https://img14.360buyimg.com/n1/s450x450_jfs/t1/129011/18/33825/63274/647cc7e0F6af6421b/d06746a0832192a2.jpg.avif',
+                jiage: 10,
+                isbn: 9787111639879
+            },
+            {
+                id: 'HTML5移动前端开发基础与实战（微课版）',
+                type: '物联网',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/134600/38/45692/21469/66fb8531F6f58e95d/26483e96061008ca.jpg.avif',
+                jiage: 8,
+                isbn: 9787115489647
+            },
+            {
+                id: '大数据技术导论',
+                type: '物联网',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/73042/10/27757/118016/66ec05b7Fb93589bb/c39d10d183dda953.jpg.avif',
+                jiage: 8,
+                isbn: 9787304095819
+            },
+            {
+                id: '云计算技术与应用',
+                type: '物联网',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/229483/7/7969/21802/657bd7a0F1dd090da/3a09aac44b5ac230.jpg.avif',
+                jiage: 9,
+                isbn: 9787568521048
+            },
+            {
+                id: '微信小程序开发实战（第2版）',
+                type: '物联网',
+                img: 'https://img12.360buyimg.com/n1/s450x450_jfs/t1/190368/25/43866/58185/663de0eaF6d3be361/43e81e7708b50334.jpg.avif',
+                jiage: 8,
+                isbn: 9787115606020
+            },
+            {
+                id: '“互联网+”大学生创新创业教程',
+                type: '物联网',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/6866/25/39293/29855/66f55b74F370d47eb/6f6b41d0acc3199f.jpg.avif',
+                jiage: 9,
+                isbn: 9787554839942
+            },
+            {
+                id: '计算机网络技术基础（第3版）',
+                type: '物联网',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/191511/39/45233/19406/66608ab8F7db60df8/8f9584f536ffc45b.jpg.avif',
+                jiage: 8,
+                isbn: 9787040571158
+            },
+            {
+                id: 'Linux网络操作系统项目教程（RHEL 8/CentOS 8）（微课版）（第4版）',
+                type: '物联网',
+                img: 'https://img13.360buyimg.com/n1/s450x450_jfs/t1/152454/19/29741/72578/63a7b9daEffaac7e3/5fa7175eba4b50c7.jpg.avif',
+                jiage: 9,
+                isbn: 9787115567963
+            },
+            {
+                id: 'Python程序开发案例教程',
+                type: '物联网',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/98520/40/34310/23480/640cf660Ff1075ae2/efb8bfd4a767d923.jpg.avif',
+                jiage: 8,
+                isbn: 9787113259723
+            },
+            {
+                id: '单片机应用技术（C语言版）第4版',
+                type: '物联网',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/235677/32/4618/81576/65637b7bF9d30e95e/f8d3795cb4170355.jpg.avif',
+                jiage: 9,
+                isbn: 9787121244537
+            },
+            {
+                id: '计算机专业英语（第六版）',
+                type: '物联网',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/234956/14/19805/13281/66693a38F4f411768/14c1db03f7abfc39.jpg.avif',
+                jiage: 9,
+                isbn: 9787568535540
+            },
+            {
+                id: 'MySQL数据库基础实例教程（第2版）（微课版）',
+                type: '物联网',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/119759/27/47966/153182/66ffb1efF4596b7e0/26910196fac2d8aa.jpg.avif',
+                jiage: 8,
+                isbn: 9787115564634
+            },
+            {
+                id: 'HTML5+CSS3网站设计基础教程（第2版）',
+                type: '物联网',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/174416/40/5781/65222/607ff5b5Eb973d601/be238baf7afb00cd.jpg.avif',
+                jiage: 9,
+                isbn: 9787115526588
+            },
+            {
+                id: '物联网项目规划与实施',
+                type: '物联网',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/223340/18/38479/10364/6620b331Ffa38815d/4a938296c44223aa.jpg.avif',
+                jiage: 9,
+                isbn: 9787040489446
+            },
+            {
+                id: '云计算平台搭建与维护（基于Openstack和Kerbebetes）（微课版）',
+                type: '计算机',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/230104/15/26439/23043/66e62485F48dabbf3/dd8e3fc2a8ede725.jpg.avif',
+                jiage: 10,
+                isbn: 9787121428562
+            },
+            {
+                id: '信创服务器操作系统的配置与管理（麒麟版）',
+                type: '计算机',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/167606/12/37599/71855/64d64f10Fff0a2aac/3e1781958cc13095.jpg.avif',
+                jiage: 9,
+                isbn: 9787121447686
+            },
+            {
+                id: '微信小程序开发实战（第2版）',
+                type: '计算机',
+                img: 'https://img12.360buyimg.com/n1/s450x450_jfs/t1/190368/25/43866/58185/663de0eaF6d3be361/43e81e7708b50334.jpg.avif',
+                jiage: 8,
+                isbn: 9787115606020
+            },
+            {
+                id: '“互联网+”大学生创新创业教程（高职版）',
+                type: '计算机',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/6866/25/39293/29855/66f55b74F370d47eb/6f6b41d0acc3199f.jpg.avif',
+                jiage: 9,
+                isbn: 9787554839942
+            },
+            {
+                id: '计算机网络技术基础（第3版）',
+                type: '计算机',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/196766/3/48062/15059/66fca741F2f587975/7600967b2626b20d.jpg.avif',
+                jiage: 9,
+                isbn: 9787040571158
+            },
+            {
+                id: '计算机组装与维护情境实训（第3版）',
+                type: '计算机',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/107097/26/52157/77683/67034e1aF0568468d/cb5532cd40f56096.jpg.avif',
+                jiage: 8,
+                isbn: 9787121379901
+            },
+            {
+                id: 'Java基础入门（第3版）',
+                type: '计算机',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/200798/34/46291/170262/670c7a6aF0fc687e3/d1693161888b622e.jpg.avif',
+                jiage: 9,
+                isbn: 9787302592440
+            },
+            {
+                id: 'MySQL数据库基础案例教程',
+                type: '计算机',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/119759/27/47966/153182/66ffb1efF4596b7e0/26910196fac2d8aa.jpg.avif',
+                jiage: 12,
+                isbn: 9787115564634
+            },
+            {
+                id: 'Android移动开发基础案例教程（第2版）',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/94995/3/47385/80083/66d82ae6F8f0427f4/39b771cab61cfc92.jpg.avif',
+                jiage: 9,
+                isbn: 9787115567680
+            },
+            {
+                id: 'Linux网络操作系统项目教程（RHEL 8/CentOS 8）（微课版）（第4版）',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img13.360buyimg.com/n1/s450x450_jfs/t1/152454/19/29741/72578/63a7b9daEffaac7e3/5fa7175eba4b50c7.jpg.avif',
+                jiage: 11,
+                isbn: 9787115567963
+            },
+            {
+                id: '图说图解机器学习',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img10.360buyimg.com/n1/jfs/t1/243733/35/17091/30024/66d8e1aeF7527f9cb/c8f41569832961de.jpg.avif',
+                jiage: 8,
+                isbn: 9787121368264
+            },
+            {
+                id: '微信小程序开发实战（第2版）',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img12.360buyimg.com/n1/s450x450_jfs/t1/190368/25/43866/58185/663de0eaF6d3be361/43e81e7708b50334.jpg.avif',
+                jiage: 9,
+                isbn: 9787115606020
+            },
+            {
+                id: '云计算平台搭建与维护（基于Openstack和Kerbebetes）（微课版）',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/230104/15/26439/23043/66e62485F48dabbf3/dd8e3fc2a8ede725.jpg.avif',
+                jiage: 10,
+                isbn: 9787121428562
+            },
+            {
+                id: 'Python程序开发案例教程',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/98520/40/34310/23480/640cf660Ff1075ae2/efb8bfd4a767d923.jpg.avif',
+                jiage: 9,
+                isbn: 9787113259723
+            },
+            {
+                id: '计算机网络技术基础（第3版）  ',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/196766/3/48062/15059/66fca741F2f587975/7600967b2626b20d.jpg.avif',
+                jiage: 8,
+                isbn: 9787040571158
+            },
+            {
+                id: 'MySQL数据库基础案例教程',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/119759/27/47966/153182/66ffb1efF4596b7e0/26910196fac2d8aa.jpg.avif',
+                jiage: 12,
+                isbn: 9787115564634
+            },
+            {
+                id: 'Photoshop 2022中文版案例教程（第3版）',
+                type: '计算机应用技术（退役军人现代学徒制）',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/117386/2/35356/33374/643dedb0F44923320/a5fb459ecd31fd41.jpg.avif',
+                jiage: 12,
+                isbn: 9787040595000
+            },
+            {
+                id: 'Spark大数据分析与实战',
+                type: '大数据技术',
+                img: 'https://img10.360buyimg.com/n1/jfs/t1/92870/8/37081/20661/66bc1feeF5f263dcb/0a367561f446ba83.jpg.avif',
+                jiage: 9,
+                isbn: 9787302534327
+            },
+            {
+                id: 'Python数据分析与挖掘实战(第2版)',
+                type: '大数据技术',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/29938/18/18454/69114/62ce403aEa1fc6133/2ae7a464b7ecec48.jpg.avif',
+                jiage: 9,
+                isbn: 9787115575821
+            },
+            {
+                id: 'MySQL数据库基础案例教程',
+                type: '大数据技术',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/119759/27/47966/153182/66ffb1efF4596b7e0/26910196fac2d8aa.jpg.avif',
+                jiage: 12,
+                isbn: 9787115564634
+            },
+            {
+                id: 'Linux网络操作系统项目教程（RHEL 8/CentOS 8）（微课版）（第4版）',
+                type: '大数据技术',
+                img: 'https://img13.360buyimg.com/n1/s450x450_jfs/t1/152454/19/29741/72578/63a7b9daEffaac7e3/5fa7175eba4b50c7.jpg.avif',
+                jiage: 11,
+                isbn: 9787115567963
+            },
+            {
+                id: 'MySQL数据库基础实例教程（第2版）（微课版）',
+                type: '大数据技术',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/119759/27/47966/153182/66ffb1efF4596b7e0/26910196fac2d8aa.jpg.avif',
+                jiage: 8,
+                isbn: 9787115564634
+            },
+            {
+                id: '计算机网络技术基础（第3版）  ',
+                type: '大数据技术',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/196766/3/48062/15059/66fca741F2f587975/7600967b2626b20d.jpg.avif',
+                jiage: 8,
+                isbn: 9787040571158
+            },
+            {
+                id: 'Java基础入门（第3版）',
+                type: '大数据技术',
+                img: 'https://img11.360buyimg.com/n1/s450x450_jfs/t1/197424/28/40452/48548/66478ac3Fa3c70521/20c95cd8d0caa9e0.jpg.avif',
+                jiage: 4,
+                isbn: 9787302592440
+            },
+            {
+                id: 'HADOOP大数据平台搭建与应用(工作手册式)(微课版)',
+                type: '大数据技术',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/197277/27/40325/51325/6651a3fdF23f7b644/9ea0351c3de804a4.jpg.avif',
+                jiage: 10,
+                isbn: 9787121461446
+            },
+            {
+                id: '“互联网+”大学生创新创业教程（高职版）',
+                type: '大数据技术',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/6866/25/39293/29855/66f55b74F370d47eb/6f6b41d0acc3199f.jpg.avif',
+                jiage: 9,
+                isbn: 9787554839942
+            },
+            {
+                id: '云计算平台搭建与维护（基于Openstack和Kerbebetes）（微课版）',
+                type: '网络',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/223573/16/16422/54800/634bb8acEc607c7eb/a938cdefb6af5d79.jpg.avif',
+                jiage: 8,
+                isbn: 9787121428562
+            },
+            {
+                id: '“综合布线技术',
+                type: '网络',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/244041/20/18243/25528/66e62470Faa41b26b/ad9d5f51b7858afd.jpg.avif',
+                jiage: 10,
+                isbn: 9787113273323
+            },
+            {
+                id: 'Kali Linux渗透测试技术详解',
+                type: '网络',
+                img: 'https://img10.360buyimg.com/n1/jfs/t736/333/845849823/363138/d691808b/54f8fc02Nb8a0e416.jpg.avif',
+                jiage: 9,
+                isbn: 9787302389644
+            },
+            {
+                id: 'HTML5移动网站与App开发实战（Web前端技术丛书）',
+                type: '网络',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/168851/2/38108/91984/64a3ec25F91f98945/47296001a78e6142.jpg.avif',
+                jiage: 12,
+                isbn: 9787302612841
+            },
+            {
+                id: '无线局域网组建与优化（HCIA-WLAN）（微课版）',
+                type: '网络',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/242998/7/20297/23234/66fde642F862b5e89/e0df6678a1982977.jpg.avif',
+                jiage: 8,
+                isbn: 9787115562074
+            },
+            {
+                id: 'Windows Server 网络操作系统项目教程（Windows Server 2019）（微课版）（第2版）',
+                type: '网络',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/40587/30/23894/298783/64508173F084fc4f0/262adae9e045ae16.png.avif',
+                jiage: 9,
+                isbn: 9787115594983
+            },
+            {
+                id: '信息安全管理与风险评估(第2版)',
+                type: '网络',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/167293/34/15174/52492/606197ecE62e6de61/dd705cfd25551968.jpg.avif',
+                jiage: 8,
+                isbn: 9787302554028
+            },
+            {
+                id: '“互联网+”大学生创新创业教程（高职版）',
+                type: '网络',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/6866/25/39293/29855/66f55b74F370d47eb/6f6b41d0acc3199f.jpg.avif',
+                jiage: 9,
+                isbn: 9787554839942
+            },
+            {
+                id: 'MySQL数据库基础实例教程（第2版）（微课版）',
+                type: '网络',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/119759/27/47966/153182/66ffb1efF4596b7e0/26910196fac2d8aa.jpg.avif',
+                jiage: 8,
+                isbn: 9787115564634
+            },
+            {
+                id: '数据通信与网络技术',
+                type: '网络',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/163382/31/49264/38619/66fc9c92F0289b7d0/ce46beaafc80890c.jpg.avif',
+                jiage: 10,
+                isbn: 9787115558466
+            },
+            {
+                id: 'Python数据分析与挖掘实战(第2版)',
+                type: '网络',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/29938/18/18454/69114/62ce403aEa1fc6133/2ae7a464b7ecec48.jpg.avif',
+                jiage: 9,
+                isbn: 9787115575821
+            },
+            {
+                id: 'Linux系统管理与服务器配置—基于CentOS 7（第2版）',
+                type: '网络',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/184265/35/31968/56643/63f16a3aFd768e971/b81e2bddd5ae08af.jpg.avif',
+                jiage: 9,
+                isbn: 9787121440571
+            },
+            {
+                id: '大学美育',
+                type: '网络',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            }
+        ]
+    },
+    {
+        "names": "智能制造学院",
+        "foods": [{
+                id: '大学美育',
+                type: '工业互联网',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '电气控制与PLC（第3版）',
+                type: '机电',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/170476/1/20297/34497/6081133bE8a94556f/ac70b1f6d6b8dc81.jpg.avif',
+                jiage: 10,
+                isbn: 9787115526106
+            },
+            {
+                id: '电气控制与PLC（第3版）',
+                type: '工业机器人',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/170476/1/20297/34497/6081133bE8a94556f/ac70b1f6d6b8dc81.jpg.avif',
+                jiage: 10,
+                isbn: 9787115526106
+            },
+            {
+                id: 'PLC编程与应用（S7-1200）',
+                type: '机电',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/245145/17/20633/62101/66ff60bdFe85cfe56/fc7c1f2886fd973a.jpg.avif',
+                jiage: 10,
+                isbn: 9787040512243
+            },
+            {
+                id: '电气控制技术',
+                type: '工业机器人',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/198023/24/26432/31458/631b210dEd046ef2f/d69865f78a930bfd.jpg.avif',
+                jiage: 10,
+                isbn: 9787303205240
+            },
+            {
+                id: '电子技术基础（第4版）（微课版）',
+                type: '工业机器人',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/134045/15/3489/219921/5efd4b7bEebd63dca/88f88088e9bb145e.jpg.avif',
+                jiage: 10,
+                isbn: 9787115496584
+            },
+            {
+                id: '服务机器人实施与运维（初级）',
+                type: '工业机器人',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/196346/30/40449/64557/6527864eF406324cd/963178f4f6dbfb17.jpg.avif',
+                jiage: 10,
+                isbn: 9787111716198
+            },
+            {
+                id: 'SolidWorks产品建模教程',
+                type: '工业机器人',
+                img: 'https://img10.360buyimg.com/n1/jfs/t1/88672/10/9376/202684/5e0ee390Ebc40c42a/b11d4f6de8175bc1.jpg.avif',
+                jiage: 10,
+                isbn: 9787518426898
+            },
+            {
+                id: '工业机器人离线编程与仿真',
+                type: '机电',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/226924/5/8072/51268/657c2832F97d90970/c038fdd4999546d5.jpg.avif',
+                jiage: 10,
+                isbn: 9787568040501
+            },
+            {
+                id: '机电产品营销',
+                type: '机电',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/179591/20/48379/27586/66fa6d8eF8a1222b4/fba20831c711519e.jpg.avif',
+                jiage: 10,
+                isbn: 9787111684015
+            }
+        ]
+    },
+    {
+        "names": "食品健康学院",
+        "foods": [{
+                id: '食品安全快速检测技术',
+                type: '食品检测',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/115454/3/16122/111686/5f46411dE6933c073/0042ad6c28db84c4.jpg.avif',
+                jiage: 19,
+                isbn: 9787122353375
+            },
+            {
+                id: '食品感官检验技术',
+                type: '食品检测',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/111431/32/47232/84355/66fdea8eF55553a7e/5d1798086551242f.jpg.avif',
+                jiage: 19,
+                isbn: 9787568520119
+            },
+            {
+                id: '食品标准与法规',
+                type: '食品检测',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/245928/1/9145/17690/6647dafdF3a720513/9235d1ed7654aa44.jpg.avif',
+                jiage: 19,
+                isbn: 9787565526848
+            },
+            {
+                id: '食品安全快速检测技术',
+                type: '食品生物',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/115454/3/16122/111686/5f46411dE6933c073/0042ad6c28db84c4.jpg.avif',
+                jiage: 19,
+                isbn: 9787122353375
+            },
+            {
+                id: '食品加工技术(第二版)',
+                type: '食品生物',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/48869/15/27680/51061/66cf3d1bFe8806295/2e285150342ee2c2.jpg.avif',
+                jiage: 19,
+                isbn: 9787122317384
+            }
+        ]
+    },
+    {
+        "names": "公共管理学院",
+        "foods": [{
+                id: '信息技术基础',
+                type: '人力资源',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '智慧养老',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '大学美育',
+                type: '智慧养老',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '信息技术基础',
+                type: '现代文秘',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '社区',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '社工',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '大学美育',
+                type: '人力资源',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '社区',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '社工',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '现代文秘',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            }
+        ]
+    },
+    {
+        "names": "艺术与新媒体学院",
+        "foods": [{
+                id: '形势与政策',
+                type: '网络新闻',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/20829/1/24203/122983/66de4b03F77e84c92/78da2fd6515d0dc5.jpg.avif',
+                jiage: 12,
+                isbn: 9787218164250
+            },
+            {
+                id: '形势与政策',
+                type: '视传',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/20829/1/24203/122983/66de4b03F77e84c92/78da2fd6515d0dc5.jpg.avif',
+                jiage: 12,
+                isbn: 9787218164250
+            },
+            {
+                id: '学党史、知党情、跟党走—中共党史简明教程（大学生版）',
+                type: '视传',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/58082/9/26697/131699/66dc201dF6703b49c/dda8292eaeead729.jpg.avif',
+                jiage: 12,
+                isbn: 9787503569838
+            },
+            {
+                id: '毛泽东思想和中国特色社会主义理论体系概论',
+                type: '视传',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/215130/6/41436/91094/664f82a4F2bc41e89/f0cf27eec698e4b3.jpg.avif',
+                jiage: 12,
+                isbn: 9787040599039
+            }
+        ]
+    },
+    {
+        "names": "旅游学院",
+        "foods": [{
+                id: '信息技术基础',
+                type: '国际邮轮',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '会展',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '旅游',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '大学美育',
+                type: '旅游',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '会展',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '国际邮轮',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            }
+        ]
+    },
+    {
+        "names": "关山月中国画学院",
+        "foods": [{
+                id: '文创开发与设计',
+                type: '民族美术',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/74315/12/8367/85854/5d64a2afE00b09107/76125ad274dd1d31.jpg.avif',
+                jiage: 12,
+                isbn: 9787518423996
+            },
+            {
+                id: '书法教程',
+                type: '民族美术',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/112426/7/47304/63092/656aee22F66dcbb75/2504ad638e9b420f.jpg.avif',
+                jiage: 10,
+                isbn: 9787102087269
+            },
+            {
+                id: '宋人花鸟',
+                type: '民族美术',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/231199/12/6767/57449/6571e48dFfe8504cd/a30a697485f20b72.jpg.avif',
+                jiage: 8,
+                isbn: 9787550323087
+            },
+            {
+                id: '陆俨少教学示范作品（一套两册）',
+                type: '民族美术',
+                img: 'https://img10.360buyimg.com/n1/11580/d2aa4f83-ded1-4408-94dd-32d8dde64af4.jpg.avif',
+                jiage: 11,
+                isbn: 9787810836036
+            },
+            {
+                id: '中国美术简史',
+                type: '民族美术',
+                img: 'https://img10.360buyimg.com/n1/jfs/t1/163821/35/29672/145381/6379d36fE248f6327/b60ded683fc184a4.jpg.avif',
+                jiage: 12,
+                isbn: 9787500646501
+            },
+            {
+                id: '大学美育',
+                type: '民族美术',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            }
+        ]
+    },
+    {
+        "names": "其他学院",
+        "foods": [{
+                id: '信息技术基础',
+                type: '城市环境（花都）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '工程测量（花都）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '信息技术基础',
+                type: '环艺（花都）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '大学美育',
+                type: '建筑智能化（花都）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '工程造价（花都）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '给排水（花都）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '城市环境（花都）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '道桥工程（花都）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            },
+            {
+                id: '大学美育',
+                type: '工程造价（花都）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/105054/34/43156/42844/64c8a5c7F3beae04c/9e057b84b895af6b.jpg.avif',
+                jiage: 12,
+                isbn: 9787040607123
+            }
+        ]
+    },
+    {
+        "names": "特殊教育学院",
+        "foods": [{
+                id: '信息技术基础',
+                type: '视传（花都特殊教育）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/231821/16/17231/79749/662a7c0bF3aee6fd6/453f9c51d4cfb7c6.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: '移动UI界面设计（微课版）',
+                type: '计算机（花都特殊教育）',
+                img: 'https://img11.360buyimg.com/n1/jfs/t1/177719/21/39574/63238/651461e1F86c909dd/496c925d7a9c80fd.jpg.avif',
+                jiage: 9,
+                isbn: 9787040571684
+            },
+            {
+                id: '新媒体技术基础（初级）',
+                type: '计算机（花都特殊教育）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/210545/12/35956/54349/6488135bF67ac41bf/f2f323a0de55375f.jpg.avif',
+                jiage: 9,
+                isbn: 9787577007786
+            },
+            {
+                id: 'Animate CC实例教程（微课版）',
+                type: '计算机（花都特殊教育）',
+                img: 'https://img12.360buyimg.com/n1/jfs/t1/150500/4/9290/47255/5fc9a48bE8e5432ee/ae673ee629e8d3ea.jpg.avif',
+                jiage: 9,
+                isbn: 9787115526717
+            },
+            {
+                id: 'VI设计（第三版）',
+                type: '视传（花都特殊教育）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/187929/20/39414/58219/665b540cFed730d2c/8aa0646806c20767.jpg.avif',
+                jiage: 9,
+                isbn: 9787040542691
+            },
+            {
+                id: '书籍装帧 第2版',
+                type: '视传（花都特殊教育）',
+                img: 'https://img10.360buyimg.com/n1/jfs/t1/224390/7/18326/30822/668e52b6Fdf324ee3/37d29de74ac4f527.jpg.avif',
+                jiage: 9,
+                isbn: 9787313244321
+            },
+            {
+                id: 'CorelDRAW X7 实例教程（第5版）（微课版）',
+                type: '视传（花都特殊教育）',
+                img: 'https://img13.360buyimg.com/n1/jfs/t1/172309/14/48144/27870/670884a2Fcc81871b/7de54d1037d2dc19.jpg.avif',
+                jiage: 9,
+                isbn: 9787115450302
+            },
+            {
+                id: '字体设计（第二版）',
+                type: '视传（花都特殊教育）',
+                img: 'https://img14.360buyimg.com/n1/jfs/t1/238071/38/20583/27533/668e465cF5086e7dd/e25e8688349d63ed.jpg.avif',
+                jiage: 9,
+                isbn: 9787313223395
+            }
+        ]
+    }
+];
+// 提取 id 和 img 并按 jiage 排序
+const processedData = data.flatMap(college => college.foods)
+    .map(item => ({
+        id: item.id,
+        img: item.img,
+        jiage: item.jiage
+    }))
+    .sort((a, b) => a.jiage - b.jiage);
+
+// 将处理后的数据存储在 Vuex 存储中
+store.commit('setProcessedData', processedData);

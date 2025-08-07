@@ -1,0 +1,88 @@
+
+.dianzanbox {
+        display: flex;
+        width: 250rpx;
+        position: relative;
+        top: 70rpx;
+        float: right;
+        border-radius: 30rpx;
+        padding: 10rpx;
+        border: 5rpx solid #ccc;
+        box-shadow: 5rpx 5rpx 5rpx 0 rgba(0, 0, 0, 0.5);
+}
+.shoucantext {
+        font-weight: bold;
+        font-size: 26rpx;
+        color: #d81e06;
+        margin-left: 15rpx;
+        display: flex;
+        align-items: center;
+}
+.dianzan {
+        width: 100rpx;
+        height: 100rpx;
+}
+.item {
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 15rpx 15rpx 15rpx 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        background-color: #f2f2f2;
+        box-sizing: border-box;
+}
+.item-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-bottom: 250rpx;
+        border-radius: 50rpx;
+}
+.item-content {
+        flex: 1;
+}
+.item-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+}
+.tag {
+        display: inline-block;
+        font-size: 12px;
+        padding: 2px 8px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-top: 2px;
+        white-space: nowrap;
+        max-width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+.tag-price {
+        background: #e6f7e6;
+        color: #328d64;
+        border: 1px solid #b2e2b2;
+}
+.tag-xiaoqv {
+        background: #e6f0fa;
+        color: #3a6ea5;
+        border: 1px solid #b3cde8;
+}
+.tag-phone {
+        background: #fff7e6;
+        color: #b26a00;
+        border: 1px solid #ffe0b2;
+}
+.item-contact {
+        margin-bottom: 5px;
+}
+.item-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+}

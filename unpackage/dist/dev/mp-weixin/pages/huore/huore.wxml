@@ -1,0 +1,1 @@
+<view class="huoretop"><image class="huoreicon" src="{{a}}" mode=""></image><view class="huoretitle"> 火热书籍排行榜 </view></view><view class="no-collection"> 暂无用户数据 </view>
