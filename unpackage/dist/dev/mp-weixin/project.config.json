@@ -18,7 +18,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "3.8.12",
+  "libVersion": "3.9.0",
   "appid": "wxc7f155a01020bd49",
   "projectname": "广城智慧书丛",
   "condition": {
